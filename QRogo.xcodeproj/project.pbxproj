@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		CA42D4752106D93900F3B7F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA42D4742106D93900F3B7F2 /* AppDelegate.swift */; };
-		CA42D4772106D93900F3B7F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA42D4762106D93900F3B7F2 /* ViewController.swift */; };
+		CA42D4772106D93900F3B7F2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA42D4762106D93900F3B7F2 /* LoginViewController.swift */; };
 		CA42D47A2106D93900F3B7F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA42D4782106D93900F3B7F2 /* Main.storyboard */; };
 		CA42D47C2106D93C00F3B7F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA42D47B2106D93C00F3B7F2 /* Assets.xcassets */; };
 		CA42D47F2106D93C00F3B7F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA42D47D2106D93C00F3B7F2 /* LaunchScreen.storyboard */; };
+		CA42D4872106E26A00F3B7F2 /* StyleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA42D4862106E26A00F3B7F2 /* StyleTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CA42D4712106D93900F3B7F2 /* QRogo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRogo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA42D4742106D93900F3B7F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CA42D4762106D93900F3B7F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CA42D4762106D93900F3B7F2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CA42D4792106D93900F3B7F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA42D47B2106D93C00F3B7F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA42D47E2106D93C00F3B7F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA42D4802106D93C00F3B7F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA42D4862106E26A00F3B7F2 /* StyleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,24 @@
 		CA42D4732106D93900F3B7F2 /* QRogo */ = {
 			isa = PBXGroup;
 			children = (
+				CA42D4882106E27500F3B7F2 /* Views */,
 				CA42D4742106D93900F3B7F2 /* AppDelegate.swift */,
-				CA42D4762106D93900F3B7F2 /* ViewController.swift */,
+				CA42D4762106D93900F3B7F2 /* LoginViewController.swift */,
 				CA42D4782106D93900F3B7F2 /* Main.storyboard */,
 				CA42D47B2106D93C00F3B7F2 /* Assets.xcassets */,
 				CA42D47D2106D93C00F3B7F2 /* LaunchScreen.storyboard */,
 				CA42D4802106D93C00F3B7F2 /* Info.plist */,
 			);
 			path = QRogo;
+			sourceTree = "<group>";
+		};
+		CA42D4882106E27500F3B7F2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA42D4862106E26A00F3B7F2 /* StyleTextField.swift */,
+			);
+			name = Views;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +147,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA42D4772106D93900F3B7F2 /* ViewController.swift in Sources */,
+				CA42D4772106D93900F3B7F2 /* LoginViewController.swift in Sources */,
+				CA42D4872106E26A00F3B7F2 /* StyleTextField.swift in Sources */,
 				CA42D4752106D93900F3B7F2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +296,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5PRK9NET39;
 				INFOPLIST_FILE = QRogo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,6 +315,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5PRK9NET39;
 				INFOPLIST_FILE = QRogo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
